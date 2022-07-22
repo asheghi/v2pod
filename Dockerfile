@@ -10,4 +10,6 @@ RUN chown -R nginx:nginx /var/lib/nginx
 COPY nginx.conf /etc/nginx/http.d/default.conf
 COPY main-nginx.conf /etc/nginx/nginx.conf
 
+EXPOSE 80
+
 CMD /bin/sh ./cmd.sh
